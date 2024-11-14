@@ -11,21 +11,23 @@ public class TimeCalc {
         if (addition >60 ){
             double addHour = (double) addition /60;
             double addMinute  =   (double) addition % 60;
-            hour += addHour;
+            hours += addHour;
             minuts += addMinute;
             if (minuts>60){
                 minuts = minuts -60;
                 hours +=1;
+            
             }
-        }
+
         else{
-            hour += addHour;
-            minuts += addMinute;
+            minuts += addition;
             if (minuts>60){
                 minuts = minuts -60;
                 hours +=1;
             }
         }
+            if (hours >= 24){hours = hours-24;}
+        
             if (minuts <60){
                 System.out.println(hours + ":0" + minuts);
             }
@@ -33,5 +35,7 @@ public class TimeCalc {
                 System.out.println(hours + ":" + minuts);
             }
         
-    }
+    
+        }
+        }
 }
