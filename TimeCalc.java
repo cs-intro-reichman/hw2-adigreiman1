@@ -9,16 +9,18 @@ public class TimeCalc {
         int minuts = Integer.parseInt(""+time.charAt(3) +time.charAt(4) );
 
         if (addition >60 ){
-            double addHour = (double) addition /60;
-            double addMinute  =   (double) addition % 60;
+            int addHour = addition /60;
+            int addMinute  =  addition % 60;
             hours += addHour;
             minuts += addMinute;
             if (minuts>60){
                 minuts = minuts -60;
                 hours +=1;
-            
             }
-
+            }
+            else if (addition % 60 ==0){
+                 hours =  addition / 60 + hours;
+            }
         else{
             minuts += addition;
             if (minuts>60){
@@ -38,4 +40,4 @@ public class TimeCalc {
     
         }
         }
-}
+
