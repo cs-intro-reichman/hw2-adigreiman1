@@ -26,5 +26,12 @@ public class TimeCalc {
                 hours +=1;
             }
         }
+            if (minuts <60){
+                System.out.println(hours + ":0" + minuts);
+            }
+            else {
+                System.out.println(hours + ":" + minuts);
+            }
+        
     }
 }
