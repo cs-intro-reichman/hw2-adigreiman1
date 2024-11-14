@@ -18,8 +18,14 @@ public  class  TestRandom {
 		}
 
 		double ratio =(double) smaller /(double) bigger ;
+		
 		System.out.println("> 0.5: " + smaller + " times");
+		
 		System.out.println("<= 0.5: " + bigger + " times");
-		System.out.println("Ratio: " + ratio);
+		
+		if (bigger != 0 && smaller != 0){
+			System.out.println("Ratio: " + ratio);
+		}
+		
 	}
 }
