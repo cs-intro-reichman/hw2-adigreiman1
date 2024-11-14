@@ -28,7 +28,7 @@ public class TimeCalc {
         }
             if (hours >= 24){hours = hours-24;}
         
-            if (minuts <60){
+            if (minuts <10){
                 System.out.println(hours + ":0" + minuts);
             }
             else {
