@@ -31,5 +31,24 @@ public class TimeCalc {
                 else{
                 System.out.println(hours + ":" + minuts);
             }
+        }}
+        else{
+            hours = hours % 24;
+            if (minuts <10){
+                if (hours<10){
+                    System.out.println("0" +hours + ":0" + minuts);
+                }
+                else{
+                    System.out.println(hours + ":0" + minuts);
+                }
+            }
+            else {
+                if (hours<10){
+                    System.out.println("0" +hours + ":" + minuts);
+                }
+                else{
+                System.out.println(hours + ":" + minuts);
+            }
+
         }
         }}}
